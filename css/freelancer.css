@@ -64,8 +64,11 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #18BC9C;
+  background: black;
   color: white;
+}
+header hr.star-light:after {
+  background-color: black;
 }
 header .container {
   padding-top: 100px;
@@ -192,9 +195,6 @@ section.success {
     padding-top: 75px;
   }
 }
-#portfolio {
-  background: rgb(225,225,225);
-}
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0; 
@@ -256,6 +256,25 @@ section.success {
 #portfolio * {
   z-index: 2;
 }
+.skills img {
+  width: 85%;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+#fundamentals {
+  width: 75%;
+  margin-left: 16%;
+  margin-top: 22%;
+}
+#mean {
+  width: 95%;
+  margin-top: 25%;
+  margin-bottom: 7px;
+}
+#lamp {
+  width: 85%;
+}
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
@@ -311,21 +330,9 @@ form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
 }
 footer {
-  color: white;
-}
-footer h3 {
-  margin-bottom: 30px;
-}
-footer .footer-above {
-  padding-top: 50px;
+  padding: 25px 0 25px;
   background-color: #2C3E50;
-}
-footer .footer-col {
-  margin-bottom: 50px;
-}
-footer .footer-below {
-  padding: 25px 0;
-  background-color: #233140;
+  color: white;
 }
 .btn-outline {
   color: white;
@@ -584,4 +591,25 @@ fieldset[disabled] .btn-success.active {
 
 .game-info {
   margin-left: 75px;
+}
+#portfolioModal4 .carousel-indicators li {
+  border: 1px solid black;
+}
+#portfolioModal4 .carousel-indicators .active {
+  background-color: black;
+}
+#contact {
+  text-align: center;
+}
+#resume_link {
+  color: black;
+}
+#contact .btn-social {
+  height: 100px;
+  width: 100px;
+  line-height: 112px;
+  border: 4px solid white;
+  }
+#contact i.fa.fa-fw {
+  font-size: 50px;
 }
