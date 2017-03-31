@@ -26,6 +26,25 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
+.line {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  width: 110px;
+  margin: 25px auto 30px;
+  border-color: white;
+}
+#star {
+  display: inline-block;
+  color: white;
+  padding: 0;
+  position: relative;
+  top: -0.8em;
+  font-size: 2em;
+  padding: 0 0.25em;
+}
 hr.star-light,
 hr.star-primary {
   padding: 0;
@@ -64,7 +83,7 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: black;
+  background: url("../img/desk.JPG") black no-repeat center center fixed;
   color: white;
 }
 header hr.star-light:after {
@@ -84,10 +103,20 @@ header .intro-text .name {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
 }
 header .intro-text .skills {
   font-size: 1.25em;
   font-weight: 300;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
 }
 @media (min-width: 768px) {
   header .container {
@@ -203,8 +232,8 @@ section.success {
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
 }
-#portfolio .portfolio-item:hover .pic {
-  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+#portfolio .portfolio-item .portfolio-link:hover .pic {
+  /*filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');*/
   filter: grayscale(1) blur(3px);
   -webkit-filter: grayscale(1) blur(3px);
   -webkit-transform: scale(1.2);
@@ -246,7 +275,7 @@ section.success {
   margin-top: 65px;
   background: rgba(0, 0, 0, 0.6);
 }
-#portfolio .portfolio-item:hover .portfolio-link .caption p {
+#portfolio .portfolio-item .portfolio-link:hover .caption p {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: scale(1);
@@ -592,10 +621,10 @@ fieldset[disabled] .btn-success.active {
 .game-info {
   margin-left: 75px;
 }
-#portfolioModal4 .carousel-indicators li {
+.carousel-indicators li {
   border: 1px solid black;
 }
-#portfolioModal4 .carousel-indicators .active {
+.carousel-indicators .active {
   background-color: black;
 }
 #contact {
