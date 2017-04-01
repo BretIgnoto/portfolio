@@ -10,8 +10,7 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
   },
 "scripts": {
-  "build": "babel ./server -d build",
-  "start": "node ./build/server.js"
+  "build": "babel ./js/ticTacToe.js -d build"
 },
   "devDependencies": {
     "babel-cli": "^6.24.0",
