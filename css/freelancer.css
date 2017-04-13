@@ -83,7 +83,7 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: url("../img/desk.JPG") black no-repeat center center fixed;
+  background: url("../img/desk.jpg") black no-repeat center center fixed;
   color: white;
 }
 header hr.star-light:after {
